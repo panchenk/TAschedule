@@ -4,8 +4,7 @@
 
 public class Time {
 private int timeOfWeek;
-//private String day;
-//private int[] timeOfDay;
+
 private int duration;
 
 public void setTimeOfWeek (int time) {
