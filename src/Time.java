@@ -79,14 +79,30 @@ public static boolean overlap(Time t1, Time t2) {
 public static void main(String[] args) {
 	Time t1 = new Time();
 	Time t2 = new Time();
+	Time t3 = new Time();
+	Time t4 = new Time();
 	t1.setTimeOfWeek(1500);
 	t1.setDuration(75);
+	System.out.println("First class");
 	t1.printTimeOfWeek();
 	t2.setTimeOfWeek(3550);
 	t2.setDuration(75);
+	System.out.println("Second class");
 	t2.printTimeOfWeek();
-	System.out.println(overlap(t1,t2));
-	System.out.println(t1.getTimeOfWeek());
-	System.out.println(t2.getTimeOfWeek());
+	System.out.println("Overlap? " + overlap(t1,t2));
+	System.out.println("1st class absolute time - " + t1.getTimeOfWeek());
+	System.out.println("2nd class absolute time - " + t2.getTimeOfWeek());
+	System.out.println();
+	t3.setTimeOfWeek(3500);
+	t3.setDuration(75);
+	System.out.println("First class");
+	t3.printTimeOfWeek();
+	t4.setTimeOfWeek(3550);
+	t4.setDuration(75);
+	System.out.println("Second class");
+	t4.printTimeOfWeek();
+	System.out.println("Overlap? " + overlap(t3,t4));
+	System.out.println("1st class absolute time - " + t3.getTimeOfWeek());
+	System.out.println("2nd class absolute time - " + t4.getTimeOfWeek());
 }
 }
